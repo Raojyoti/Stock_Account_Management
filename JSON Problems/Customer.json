@@ -1,1 +1,27 @@
-[{"StockName":"Google","StockPrice":100.0,"NoOfShares":100},{"StockName":"Amazon","StockPrice":100.0,"NoOfShares":100},{"StockName":"FlipKart","StockPrice":100.0,"NoOfShares":100},{"StockName":"Myntra","StockPrice":100.0,"NoOfShares":73},{"StockName":"TCS","StockPrice":100.0,"NoOfShares":100}]
+[
+  {
+    "StockName": "Google",
+    "StockPrice": 100.0,
+    "NoOfShares": 65
+  },
+  {
+    "StockName": "Amazon",
+    "StockPrice": 100.0,
+    "NoOfShares": 50
+  },
+  {
+    "StockName": "FlipKart",
+    "StockPrice": 100.0,
+    "NoOfShares": 25
+  },
+  {
+    "StockName": "Myntra",
+    "StockPrice": 100.0,
+    "NoOfShares": 73
+  },
+  {
+    "StockName": "TCS",
+    "StockPrice": 100.0,
+    "NoOfShares": 10
+  }
+]
