@@ -15,7 +15,7 @@ namespace JSON_Problems
             management.BuyStock("Myntra");
             management.WriteToStockJsonFile(stockFilePath);
             management.WriteToStockJsonFile(customerFilePath);
-            management.SellStock("Google");
+            management.SellStock("Myntra");
             management.WriteSellToStockJsonFile(stockFilePath);
             management.WriteSellToStockJsonFile(customerFilePath);
         }

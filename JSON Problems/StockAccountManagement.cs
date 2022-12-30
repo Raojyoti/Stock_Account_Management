@@ -70,7 +70,10 @@ namespace JSON_Problems
                             customer.Add(details);
                         }
                     }
+                    Console.WriteLine("Amount  NoOfShare ");
+                    Console.WriteLine(amount +" "+ data.NoOfShares);
                 }
+               
             }
         }
         public void WriteToStockJsonFile(string filePath)
@@ -87,12 +90,12 @@ namespace JSON_Problems
         {
             foreach (var data in stock)
             {
-                int count = 0;
+                int count = 0; amount = 1000;
                 if (data.StockName.Equals(name))
                 {
-                    Console.WriteLine("Enter required stocks you want to buy");
+                    Console.WriteLine("Enter number stocks you want to sell");
                     int noOfStocks = Convert.ToInt32(Console.ReadLine());
-                    if (amount <= noOfStocks * data.StockPrice && data.NoOfShares <= noOfStocks)
+                    if (amount <= noOfStocks * data.StockPrice &&   data.NoOfShares <= noOfStocks )
                     {
                         StockDetails details = new StockDetails()
                         {
@@ -118,7 +121,10 @@ namespace JSON_Problems
                             customer.Add(details);
                         }
                     }
+                    Console.WriteLine("Amount  NoOfShare ");
+                    Console.WriteLine(amount +" "+ data.NoOfShares);
                 }
+
             }
         }
         public void WriteSellToStockJsonFile(string filePath)
