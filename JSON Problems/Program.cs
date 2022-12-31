@@ -7,17 +7,15 @@ namespace JSON_Problems
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to stock Inventory Management");
-            StockAccountManagement management=new StockAccountManagement(); 
-            string stockFilePath = @"E:\Angular projects\Json_Problems\JSON Problems\Stock.json";
+            StockAccountManagement management = new StockAccountManagement();
+            string stockFilePath = @"E:\Stock_Account_Problems\Stock_Account_Management\JSON Problems\Stock.json";
+            string customerFilePath = @"E:\Stock_Account_Problems\Stock_Account_Management\JSON Problems\Customer.json";
             management.ReadStockJsonFile(stockFilePath);
-            string customerFilePath = @"E:\Angular projects\Json_Problems\JSON Problems\Customer.json";
             management.ReadCustomerJsonFile(customerFilePath);
             management.BuyStock("Myntra");
-            management.WriteToStockJsonFile(stockFilePath);
-            management.WriteToStockJsonFile(customerFilePath);
             management.SellStock("Myntra");
-            management.WriteSellToStockJsonFile(stockFilePath);
-            management.WriteSellToStockJsonFile(customerFilePath);
+            management.WriteToStockJsonFile(stockFilePath);
+            management.WriteToCustomerJsonFile(customerFilePath);
         }
     }
 }
